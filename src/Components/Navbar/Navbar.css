@@ -1,0 +1,62 @@
+/* Navbar Brand Custom Styling */
+.navbar-brand-custom {
+  color: white !important;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+/* Navigation Link Custom Styling */
+.nav-link-custom {
+  color: white !important;
+  font-size: 16px;
+}
+
+/* Custom Button Styling */
+.btn-custom {
+  border: 1px solid white; /* Added border style for clarity */
+  border-radius: 10px;
+  background-color: white;
+  color: #000 !important;
+  padding: 6 !important;
+}
+
+/* Navbar Toggler Customization */
+.navbar-toggler {
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove focus outline */
+}
+
+/* Hide default navbar-toggler icon */
+.navbar-toggler-icon {
+  background-image: none; /* Remove default icon */
+}
+
+/* Custom hamburger icon */
+.navbar-toggler-icon::before {
+  content: '\2630'; /* Unicode for hamburger icon */
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: white; /* Set color to white */
+}
+
+/* Default button styling (hidden on smaller screens) */
+
+
+/* Small Button Customization for Smaller Devices */
+.small-btn-custom {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
+  .small-btn-custom {
+      display: inline-block; /* Show on smaller devices */
+      margin-left: auto;
+      border: 1px solid white; /* Add border style for consistency */
+      border-radius: 15px;
+      background-color: white;
+      color: #000 !important;
+  }
+
+  .btn-custom {
+      display: none; /* Hide default button on smaller screens */
+  }
+}
