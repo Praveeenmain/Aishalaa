@@ -11,7 +11,7 @@ const VoiceBox=()=>{
              <p> Aishaala,Help To Teachers and Students Work Smartly..</p>
               <div>
                 <button className='try-button'> Try For Free</button>
-                 <button className='Get-in-button'> Get in touch</button>
+               
               </div>
 
 
