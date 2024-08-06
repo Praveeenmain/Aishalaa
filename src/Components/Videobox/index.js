@@ -18,7 +18,7 @@ const VideoBoxComponent = ({ content }) => {
     <div className="Box-container">
       <div className={`Box-content ${order}`}>
         <h1 className="Box-header">{heading}</h1>
-        <p>{paragraph}</p>
+        <p className='Box-Paragraph'>{paragraph}</p>
         <div className="landing-buttons">
           <button className="start-button">{button}</button>
           <button className="signin-button">Already have an Account? Sign in</button>
@@ -28,7 +28,9 @@ const VideoBoxComponent = ({ content }) => {
       <div className="Box-content">
         {!isPopupOpen && (
           <>
+             <div className='image-box'>
             <img className="box-image" src={image.src} alt={image.alt} />
+            </div>
             <button className="viewdemo-button" onClick={handleViewDemoClick}>View Demo</button>
           </>
         )}

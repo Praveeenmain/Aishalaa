@@ -13,11 +13,12 @@ import MyNavbar from '../Navbar/Navbar';
 import FooterSection from '../Footer';
 import VideoBoxComponent from '../Videobox';
 import './index.css'
+import VoiceBox from '../VoiceComponent';
 const content = {
   button: 'Start Now',
   order: 'box-order-2',
   image: { src: Logo, alt: 'Logo' },
-  heading: 'AI Voice Assistant for Teachers and Students',
+  heading: 'AI Assistant for Teachers and Students',
   paragraph: `Welcome to the future of education with Aishaala, the revolutionary AI voice assistant crafted to elevate the learning experience for both teachers and students. 
   Poweredby Mobishaala Technologies, Aishaala brings unparalleled efficiency and personalization to educational settings.`
 };
@@ -75,6 +76,7 @@ const LandingPage = () => {
   return (
      <div className='landingpage'>
     <MyNavbar/>
+     <VoiceBox/>
     <VideoBoxComponent content={content} />
     <BoxComponent content={content2} />
     <BoxComponent content={content3} />

@@ -10,15 +10,18 @@ const BoxComponent = ({ content }) => {
     <div className="Box-container">
       <div className={`Box-content ${order}`}>
         <h1 className="Box-header">{heading}</h1>
-        <p>{paragraph}</p>
+        <p className='Box-Paragraph'>{paragraph}</p>
         <div className="landing-buttons">
           <button className="start-button">{button}</button>
           <button className="signin-button">Already have an Account?Sign in</button>
         </div>
       </div>
       <div className='Box-content'>
-        <img className='box-image' src={image.src} alt={image.alt} />
+        <div className='image-box' >
+         <img className='box-image' src={image.src} alt={image.alt} />
+        </div>
       </div>
+   
     </div>
   );
 };

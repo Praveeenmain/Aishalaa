@@ -1,0 +1,203 @@
+.Voice-box-container {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    background-color: transparent;
+    padding: 30px;
+}
+.Voice-header{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mic {
+    margin-top: 20px;
+    max-height: 200px;
+    max-width: 200px;
+    position: relative;
+    width: 100px;  
+    height: 100px; 
+    color: #fff;
+    background-color: transparent;
+    font-size: small;
+    align-self:center;
+    margin-bottom: 20px;
+}
+
+.mic::before, .mic::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    z-index: 2;
+    box-shadow: 0 0 5px 5px #0a3d28;
+}
+
+.mic::before {
+    width: 100px;  
+    height: 100px; 
+    background-color: #084526;
+}
+
+.mic::after {
+    width: 62.5px;  
+    height: 62.5px; 
+    background-color: #0e663b;
+    animation: circle-size 0.8s linear infinite alternate;
+}
+
+.mic-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5); /* Decreased scale */
+    display: block;
+    width: 8px;   /* Decreased width */
+    height: 6px;   /* Decreased height */
+    border-bottom-left-radius: 60px;  
+    border-bottom-right-radius: 60px;
+    border: 2px solid;  /* Decreased border thickness */
+    border-top: 0;
+    margin-top: 8px;  /* Adjusted margin */
+    z-index: 3;
+}
+
+.mic-icon::before, .mic-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+}
+
+.mic-icon::before {
+    width: 1px;  /* Decreased width */
+    height: 2.5px;  /* Decreased height */
+    top: calc(100% + 1px);  /* Adjusted position */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mic-icon::after {
+    border: 2px solid;  /* Decreased border thickness */
+    width: 4px;  /* Decreased width */
+    height: 8px; /* Decreased height */
+    left: 50%;
+    top: -5px;  /* Adjusted position */
+    border-radius: 2px;  /* Decreased border radius */
+    transform: translate(-50%, 0);
+}
+
+.mic-shadow {
+    width: 100px;  
+    height: 100px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 2.5px -13.75px 7.5px 3.75px #32a852, 
+                6px -2.5px 11.75px 2.5px #7bbf88, 
+                -5.25px -6.25px 24.25px 2.5px #4fc77d, 
+                12.75px 1.25px 4.25px 2.5px #00a667, 
+                0.75px 0.5px 19.25px 2.5px #45d162;
+    animation: shadow-rotate 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes circle-size {
+    from {
+        width: 62.5px;  
+        height: 62.5px; 
+    }
+    to {
+        width: 75px;  
+        height: 75px; 
+    }
+}
+
+@keyframes shadow-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.try-button {
+    height: 45px;
+    width: 120px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.try-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+    z-index: 0;
+}
+
+.try-button:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.try-button:hover {
+    background-color: #fff;
+    color: #000;
+    z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .try-button {
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .try-button {
+        height: 35px;
+        width: 80px;
+        font-size: 12px;
+    }
+}
+
+.Get-in-button{
+    height: 45px;
+    width: 120px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 0px;
+}

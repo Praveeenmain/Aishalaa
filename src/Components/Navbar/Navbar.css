@@ -3,6 +3,7 @@
   color: white !important;
   font-weight: bold;
   font-size: 21px;
+  vertical-align: middle;
 }
 
 /* Navigation Link Custom Styling */
@@ -12,12 +13,21 @@
 }
 
 /* Custom Button Styling */
-.btn-custom {
-  border: 1px solid white; /* Added border style for clarity */
+.signup-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
   border-radius: 10px;
-  background-color: white;
-  color: #000 !important;
-  padding: 6 !important;
+  height: 35px;
+  width: 120px;
+  margin-top: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for signup-button */
+.signup-button:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* Navbar Toggler Customization */
@@ -38,25 +48,31 @@
   color: white; /* Set color to white */
 }
 
-/* Default button styling (hidden on smaller screens) */
-
-
 /* Small Button Customization for Smaller Devices */
 .small-btn-custom {
-  display: none; /* Hide by default */
+  display: none !important;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for small-btn-custom */
+.small-btn-custom:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 @media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
   .small-btn-custom {
-      display: inline-block; /* Show on smaller devices */
-      margin-left: auto;
-      border: 1px solid white; /* Add border style for consistency */
-      border-radius: 15px;
-      background-color: white;
-      color: #000 !important;
+    display: flex !important;
+    margin-left: auto;
   }
 
   .btn-custom {
-      display: none; /* Hide default button on smaller screens */
+    display: none !important;
+  }
+
+  .signup-button {
+    height: 25px;
+    width: 70px;
+    font-size: 12px;
   }
 }
