@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center; /* Center content inside Box-content */
     text-align: justify; /* Justify text inside Box-content */
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .box-image {
@@ -55,12 +55,13 @@
     display: flex;
     gap: 10px; /* Add space between buttons */
     align-self: start;
+    margin-top: 20px;
 }
 
 .signin-button {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.1px solid #fff;
     color: #fff;
     cursor: pointer;
     font-size: 17px;
@@ -68,6 +69,7 @@
     display: inline-block;
     padding: 8px 16px; 
     transition: color 0.3s, transform 0.2s;
+    margin-left: 35px;
 }
 
 .signin-button:hover {

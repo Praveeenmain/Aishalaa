@@ -19,7 +19,7 @@
   color: #fff;
   border-radius: 10px;
   height: 35px;
-  width: 120px;
+  width: 90px;
   margin-top: 6px;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }

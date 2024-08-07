@@ -1,17 +1,22 @@
 import './index.css'
-
+import { FaChevronRight } from "react-icons/fa";
 const VoiceBox=()=>{
     return(
          <div className="Voice-box-container">
-            <h1 className="Voice-header"> Voice Ai For Teachers and Students</h1>
+            <h1 className="Voice-header"> AI Assistant for Teachers and Students</h1>
+            <p className='Voice-paragraph'> Experience the future of education with Aishaala Conversational AI, <br/>a personalized assistant designed to enhance learning for teachers and students.
+
+</p>
             <div class="mic">
             <i class="mic-icon"></i>
             <div class="mic-shadow"></div>
+            <button className='give-me-try'> Click to Talk</button>
             </div>
-             <p> Aishaala,Help To Teachers and Students Work Smartly..</p>
-              <div>
+           
+              <div className='try-get-buttons'>
                 <button className='try-button'> Try For Free</button>
-               
+             
+                <button className='Get-in-button'> Get in Touch <FaChevronRight className='arrow' /> </button>
               </div>
 
 
